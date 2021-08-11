@@ -10,7 +10,6 @@ cart==1.1.8
 certifi==2020.11.8
 cffi==1.14.3
 chardet==3.0.4
-ChatterBot==1.0.8
 click==7.1.2
 colorama==0.4.4
 comtypes==1.1.7
