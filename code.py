@@ -9,8 +9,8 @@ import datetime
 # print("2021, 8,15" in india)
 import time
 
-# curr_month = datetime.datetime.now().strftime("%d")
-# print(curr_month)
+curr_month = datetime.datetime.now().strftime("%d")
+print(curr_month)
 
 # def clock():
 #     while True:
