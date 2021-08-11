@@ -1,5 +1,6 @@
 aiodns==2.0.0
 aiosmtpd==1.2.2
 python-dateutil==2.8.1
+django-jsonfield==1.4.1
 
 
