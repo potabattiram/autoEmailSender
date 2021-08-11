@@ -5,14 +5,14 @@ import server
 
 
 
-starttime = time.time()
-interval = 20
+# starttime = time.time()
+# interval = 20
 
-def main_Func():
-    server.server.sendmail("potabattiram@gmail.com","potabattiram@gmail.com","potabattiram@gmail, Hello")
-    print("Check your Email Once!")
+# def main_Func():
+#     server.server.sendmail("potabattiram@gmail.com","potabattiram@gmail.com","potabattiram@gmail, Hello")
+#     print("Check your Email Once!")
 
 
-while True:
-    main_Func()
-    time.sleep(interval - ((time.time() - starttime) % interval))
+# while True:
+#     main_Func()
+#     time.sleep(interval - ((time.time() - starttime) % interval))
