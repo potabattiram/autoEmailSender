@@ -48,7 +48,6 @@ phonenumbers==8.12.12
 Pillow==8.0.0
 pipwin==0.5.1
 psycopg2==2.8.6
-PyAudio @ file:///C:/Users/Balram/Envs/testings/Lib/site-packages/PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
 PyAutoGUI==0.9.52
 pycares==3.1.1
 pycodestyle==2.7.0
