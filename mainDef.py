@@ -40,7 +40,7 @@ starttime = time.time()
 interval = 86400
 
 while True:
-    if curr_Hour == '21':
+    if curr_Hour == '00':
         while True:
             main_Func()
             # Festival_Emails()
