@@ -17,7 +17,7 @@ def main_Func():
         if curr_month in i["b_month"]:
             if curr_date in i["b_date"]:
                 subject = 'Birthday Wishes!'
-                body = '\nHello, ' + i["name"]+"!"+ ',\nBirthdays are inevitable, beautiful and very particular moments in our lives! \nMoments that brings precious memories back, celebrates the present times and gives a strong hope for the future.'+ '\n\n'+i["name"].split()[0] +', Wish you a Happy and Prosperous Birthday\nThank You!'
+                body = '\nHello, ' + i["name"]+"!"+ '\nHow are you? ' + 'Its been a long while we have met\nHere I remember you on your special occassion of Birthday\nBirthdays are inevitable, beautiful and very particular moments in our lives! \nMoments that brings precious memories back, celebrates the present times and gives a strong hope for the future.'+ '\n\n'+i["name"].split()[0] +', Wish you a Happy and Prosperous Birthday\nThank You!'
                 message = f'Subject: {subject}\n\n{body}'
 
                 Mainserver.server.sendmail("potabattiram@gmail.com",i["emailId"],message)
@@ -39,13 +39,11 @@ def Festival_Emails():
 starttime = time.time()
 interval = 86400
 
-while True:
-    if curr_Hour == '00':
-        while True:
-            main_Func()
-            # Festival_Emails()
-            time.sleep(interval - ((time.time() - starttime) % interval))
-    break
+while curr_Hour == '01':
+    while True:
+        main_Func()
+        # Festival_Emails()
+        time.sleep(interval - ((time.time() - starttime) % interval))
     
     
-
+    

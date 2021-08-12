@@ -4,8 +4,9 @@ import datetime
 curr_date = datetime.datetime.now().strftime("%Y %m %d")
 
 for date,day in sorted(holidays.India(years=2021, state='MH').items()):
-    if curr_date == '2021 08 12': 
+    # if curr_date == '2021 08 12': 
         print(day)
+        print(curr_date)
         break
 
 
