@@ -44,6 +44,5 @@ while curr_Hour == '01':
         main_Func()
         # Festival_Emails()
         time.sleep(interval - ((time.time() - starttime) % interval))
-    
-    
+        break
     
