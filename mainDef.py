@@ -20,7 +20,7 @@ def main_Func():
 
 
 starttime = time.time()
-interval = 6
+interval = 3600
 while True:
     main_Func()
     time.sleep(interval - ((time.time() - starttime) % interval))
