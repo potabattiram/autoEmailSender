@@ -18,9 +18,8 @@ def main_Func():
                 server.server.sendmail("potabattiram@gmail.com",i["emailId"],"Hello, "+i["name"]," Wish you a happy birthday bro")
                 print("Check your Email Once!")
 
-
 starttime = time.time()
-interval = 36
+interval = 86400
 while True:
     main_Func()
     time.sleep(interval - ((time.time() - starttime) % interval))
