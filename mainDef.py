@@ -37,7 +37,7 @@ def Festival_Emails():
 
 
 starttime = time.time()
-interval = 84600
+interval = 86400
 
 while True:
     if curr_Hour == '00':
