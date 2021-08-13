@@ -1,11 +1,7 @@
 import datetime
-import time
 import datetime
 import personsData
-import holidays
 import json
-import sys 
-from threading import Timer
 import smtplib
 
 file = json.loads(personsData.Person)
@@ -42,13 +38,3 @@ def Mail_Sender():
 #                 server.sendmail("potabattiram@gmail.com",i["emailId"],message)
 #                 print("Email Sent to "+ i["name"] +"for Festivals!")
 
-# interval = 3600
-
-
-# def MainFunction():     
-#     for i in range(sys.maxsize):
-#             t = Timer(3600, Mail_Sender)
-#             t.start()
-#             # time.sleep(3600)
-
-# MainFunction()
