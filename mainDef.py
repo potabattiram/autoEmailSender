@@ -41,7 +41,7 @@ def Festival_Emails():
                 Mainserver.server.sendmail("potabattiram@gmail.com",i["emailId"],message)
                 print("Email Sent to "+ i["name"] +"for Festivals!")
 
-interval = 8
+interval = 10
         
 for i in range(sys.maxsize):
         t = Timer(3.0, main_Func)
