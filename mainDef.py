@@ -1,10 +1,12 @@
 import datetime
 import time
-import Mainserver
 import datetime
 import personsData
 import holidays
 import json
+import sys 
+from threading import Timer
+import smtplib
 
 file = json.loads(personsData.Person)
 curr_whole = datetime.datetime.now().strftime("%Y %m %d")
@@ -22,7 +24,9 @@ def main_Func():
                 body = '\nHello, ' + i["name"]+"!"+ '\nHow are you? ' + 'Its been a long while we have met\nHere I remember you on your special occassion of Birthday\nBirthdays are inevitable, beautiful and very particular moments in our lives! \nMoments that brings precious memories back, celebrates the present times and gives a strong hope for the future.'+ '\n\n'+i["name"].split()[0] +', Wish you a Happy and Prosperous Birthday\nThank You!'
                 message = f'Subject: {subject}\n\n{body}'
 
-                Mainserver.server.sendmail("potabattiram@gmail.com",i["emailId"],message)
+                server = smtplib.SMTP_SSL("smtp.gmail.com",465)
+                server.login("potabattiram@gmail.com","Potabatti9012@")
+                server.sendmail("potabattiram@gmail.com",i["emailId"],message)
                 print("Email Sent for Bday!")
 
 
@@ -37,18 +41,12 @@ def Festival_Emails():
                 Mainserver.server.sendmail("potabattiram@gmail.com",i["emailId"],message)
                 print("Email Sent to "+ i["name"] +"for Festivals!")
 
-starttime = time.time()
-interval = 86400
+interval = 3600
+        
+for i in range(sys.maxsize):
+        t = Timer(3.0, main_Func)
+        t.start()
+        time.sleep(interval)
 
-n = 0
-for x in range(10):
-    time.sleep(4) 
-    
-    while True:
-        if curr_mint == '33':
-            while True:
-                main_Func()
-                # Festival_Emails()
-                time.sleep(interval - ((time.time() - starttime) % interval))
-                break
-        n = n + 1
+
+

@@ -1,20 +1,18 @@
-import holidays
-import datetime
-import asyncio
+# import holidays
+# import datetime
+# import time
+# import sys 
 
-curr_date = datetime.datetime.now().strftime("%M")
+# curr_date = datetime.datetime.now().strftime("%M")
 
-# for date,day in sorted(holidays.India(years=2021, state='MH').items()):
-#     # if curr_date == '2021 08 12': 
-#         print(day)
-#         print(curr_date)
-#         break
+# from threading import Timer
 
-# while True:
-#     if curr_date == '20':
-#         print(curr_date)
-#         break
-import time
-import os
+# def hello():
+#     print("hello, world")
 
+# for i in range(sys.maxsize):
+#     t = Timer(3.0, hello)
+#     t.start()
+#     time.sleep(4)
 
+# # time.sleep(interval - ((time.time() - starttime) % interval))
