@@ -41,7 +41,7 @@ starttime = time.time()
 interval = 86400
 
 while True:
-    if curr_mint == '04':
+    if curr_mint == '15':
         while True:
             main_Func()
             # Festival_Emails()
