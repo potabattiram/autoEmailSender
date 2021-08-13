@@ -11,10 +11,10 @@ def At_12():
     
 
 
-schedule.every(3).seconds.do(Mail_Sender)
+schedule.every(3600).seconds.do(Mail_Sender)
 schedule.every().day.at("00:00").do(At_12)
 
 while True:
     schedule.run_pending()
-    time.sleep(3)
+    time.sleep(3600)
 

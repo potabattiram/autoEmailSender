@@ -31,24 +31,24 @@ def Mail_Sender():
                 print("Email Sent for Bday!")
 
 
-def Festival_Emails():
-    for date,day in sorted(holidays.India(years=2021, state='MH').items()):
-        # if curr_whole == date: 
-            for i in file:
-                subject = day
-                body = '\nHello, ' + i["name"]+"!"+ ',\nHere, I wish you a very {day} with loads of happiness'
-                message = f'Subject: {subject}\n\n{body}'
+# def Festival_Emails():
+#     for date,day in sorted(holidays.India(years=2021, state='MH').items()):
+#         # if curr_whole == date: 
+#             for i in file:
+#                 subject = day
+#                 body = '\nHello, ' + i["name"]+"!"+ ',\nHere, I wish you a very {day} with loads of happiness'
+#                 message = f'Subject: {subject}\n\n{body}'
 
-                server.sendmail("potabattiram@gmail.com",i["emailId"],message)
-                print("Email Sent to "+ i["name"] +"for Festivals!")
+#                 server.sendmail("potabattiram@gmail.com",i["emailId"],message)
+#                 print("Email Sent to "+ i["name"] +"for Festivals!")
 
-interval = 3600
+# interval = 3600
 
 
-def MainFunction():     
-    for i in range(sys.maxsize):
-            t = Timer(3600, Mail_Sender)
-            t.start()
-            # time.sleep(3600)
+# def MainFunction():     
+#     for i in range(sys.maxsize):
+#             t = Timer(3600, Mail_Sender)
+#             t.start()
+#             # time.sleep(3600)
 
 # MainFunction()
