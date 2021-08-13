@@ -1,1 +1,1 @@
-web: python mainDef.py
+web: python Clock.py

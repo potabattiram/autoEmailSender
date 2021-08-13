@@ -16,7 +16,10 @@ curr_Hour = datetime.datetime.now().strftime("%H")
 
 curr_mint = datetime.datetime.now().strftime("%M")
 
-def main_Func():
+server = smtplib.SMTP_SSL("smtp.gmail.com",465)
+server.login("potabattiram@gmail.com","Potabatti9012@")
+
+def Mail_Sender():
     for i in file:
         if curr_month in i["b_month"]:
             if curr_date in i["b_date"]:
@@ -24,8 +27,6 @@ def main_Func():
                 body = '\nHello, ' + i["name"]+"!"+ '\nHow are you? ' + 'Its been a long while we have met\nHere I remember you on your special occassion of Birthday\nBirthdays are inevitable, beautiful and very particular moments in our lives! \nMoments that brings precious memories back, celebrates the present times and gives a strong hope for the future.'+ '\n\n'+i["name"].split()[0] +', Wish you a Happy and Prosperous Birthday\nThank You!'
                 message = f'Subject: {subject}\n\n{body}'
 
-                server = smtplib.SMTP_SSL("smtp.gmail.com",465)
-                server.login("potabattiram@gmail.com","Potabatti9012@")
                 server.sendmail("potabattiram@gmail.com",i["emailId"],message)
                 print("Email Sent for Bday!")
 
@@ -38,7 +39,7 @@ def Festival_Emails():
                 body = '\nHello, ' + i["name"]+"!"+ ',\nHere, I wish you a very {day} with loads of happiness'
                 message = f'Subject: {subject}\n\n{body}'
 
-                Mainserver.server.sendmail("potabattiram@gmail.com",i["emailId"],message)
+                server.sendmail("potabattiram@gmail.com",i["emailId"],message)
                 print("Email Sent to "+ i["name"] +"for Festivals!")
 
 interval = 3600
@@ -46,8 +47,8 @@ interval = 3600
 
 def MainFunction():     
     for i in range(sys.maxsize):
-            t = Timer(3600, main_Func)
+            t = Timer(3600, Mail_Sender)
             t.start()
-            time.sleep(interval)
+            # time.sleep(3600)
 
-MainFunction()
+# MainFunction()
