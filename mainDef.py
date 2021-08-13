@@ -7,14 +7,6 @@ import json
 import sys 
 from threading import Timer
 import smtplib
-import os
-from flask import Flask
-app = Flask(__name__)
-
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
 
 file = json.loads(personsData.Person)
 curr_whole = datetime.datetime.now().strftime("%Y %m %d")
@@ -49,13 +41,12 @@ def Festival_Emails():
                 Mainserver.server.sendmail("potabattiram@gmail.com",i["emailId"],message)
                 print("Email Sent to "+ i["name"] +"for Festivals!")
 
-interval = 10
+interval = 3600
 
 
-@app.route("/")   
 def MainFunction():     
     for i in range(sys.maxsize):
-            t = Timer(3.0, main_Func)
+            t = Timer(3600, main_Func)
             t.start()
             time.sleep(interval)
 
