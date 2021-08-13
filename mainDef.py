@@ -12,6 +12,8 @@ curr_month = datetime.datetime.now().strftime("%B")
 curr_date = datetime.datetime.now().strftime("%d")
 curr_Hour = datetime.datetime.now().strftime("%H")
 
+curr_mint = datetime.datetime.now().strftime("%M")
+
 def main_Func():
     for i in file:
         if curr_month in i["b_month"]:
@@ -39,10 +41,11 @@ def Festival_Emails():
 starttime = time.time()
 interval = 86400
 
-while curr_Hour == '01':
-    while True:
-        main_Func()
-        # Festival_Emails()
-        time.sleep(interval - ((time.time() - starttime) % interval))
-        break
+while True:
+    if curr_mint == '06':
+        while True:
+            main_Func()
+            # Festival_Emails()
+            time.sleep(interval - ((time.time() - starttime) % interval))
+            break
     

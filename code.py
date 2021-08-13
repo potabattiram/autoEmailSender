@@ -10,9 +10,9 @@ curr_date = datetime.datetime.now().strftime("%M")
 #         break
 
 while True:
-    while curr_date == '35':
+    if curr_date == '03':
         print(curr_date)
-    break
+        break
 
 
     
