@@ -37,12 +37,11 @@ def Festival_Emails():
                 Mainserver.server.sendmail("potabattiram@gmail.com",i["emailId"],message)
                 print("Email Sent to "+ i["name"] +"for Festivals!")
 
-
 starttime = time.time()
 interval = 86400
 
 while True:
-    if curr_mint == '06':
+    if curr_mint == '09':
         while True:
             main_Func()
             # Festival_Emails()
