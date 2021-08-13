@@ -1,5 +1,6 @@
 import holidays
 import datetime
+import asyncio
 
 curr_date = datetime.datetime.now().strftime("%M")
 
@@ -9,26 +10,11 @@ curr_date = datetime.datetime.now().strftime("%M")
 #         print(curr_date)
 #         break
 
-while True:
-    if curr_date == '03':
-        print(curr_date)
-        break
-
-
-    
-
-
-# # # def clock():
-# # #     while True:
-# # #         print(datetime.datetime.now().strftime("%H:%M:%S"), end="\r")
-# # #         time.sleep(1)
-
-# # # clock()
-
-# # while True:
-    
 # while True:
 #     if curr_date == '20':
-#         print('its 20')
+#         print(curr_date)
 #         break
-        
+import time
+import os
+
+

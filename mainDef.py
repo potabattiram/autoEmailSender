@@ -40,11 +40,15 @@ def Festival_Emails():
 starttime = time.time()
 interval = 86400
 
-while True:
-    if curr_mint == '15':
-        while True:
-            main_Func()
-            # Festival_Emails()
-            time.sleep(interval - ((time.time() - starttime) % interval))
-            break
+n = 0
+for x in range(10):
+    time.sleep(4) 
     
+    while True:
+        if curr_mint == '33':
+            while True:
+                main_Func()
+                # Festival_Emails()
+                time.sleep(interval - ((time.time() - starttime) % interval))
+                break
+        n = n + 1
