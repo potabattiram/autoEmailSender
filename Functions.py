@@ -18,7 +18,7 @@ server.login("potabattiram@gmail.com","Potabatti9012@")
 def Mail_Sender():
     for i in file:
         if curr_month in i["b_month"]:
-            if curr_date in i["b_date"]:
+            if curr_date in i["b_date"]-1:
                 subject = 'Birthday Wishes!'
                 body = '\nHello, ' + i["name"]+"!"+ '\nHow are you? ' + 'Its been a long while we have met\nHere I remember you on your special occassion of Birthday\nBirthdays are inevitable, beautiful and very particular moments in our lives! \nMoments that brings precious memories back, celebrates the present times and gives a strong hope for the future.'+ '\n\n'+i["name"].split()[0] +', Wish you a Happy and Prosperous Birthday\nThank You!'
                 message = f'Subject: {subject}\n\n{body}'
