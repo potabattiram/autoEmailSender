@@ -13,9 +13,8 @@ def At_12():
 def Test():
      print('Test')
 
-# schedule.every().seconds.do(Mail_Sender)
-schedule.every().day.at("23:30").do(At_12)
-schedule.every().day.at("23:30").do(Mail_Sender)
+schedule.every().day.at("00:00").do(At_12)
+schedule.every().day.at("23:38").do(Mail_Sender)
 
 while True:
     schedule.run_pending()
