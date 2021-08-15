@@ -11,11 +11,11 @@ def At_12():
     print("Its Testing Phase Bro.")
  
 def Test():
-     print('Test')
+     print('Yes Bro, I am Okay & working;)')
 
 schedule.every().seconds.do(Test)
 
-schedule.every().day.at("13:00").do(At_12)
+schedule.every().day.at("16:35").do(At_12)
 schedule.every().day.at("14:00").do(At_12)
 schedule.every().day.at("15:00").do(At_12)
 schedule.every().day.at("16:50").do(At_12)
