@@ -14,6 +14,8 @@ def Test():
      print('Test')
 
 schedule.every().seconds.do(Test)
+
+schedule.every().day.at("16:12").do(At_12)
 schedule.every().day.at("07:00").do(At_12)
 schedule.every().day.at("10:00").do(At_12)
 schedule.every().day.at("12:00").do(At_12)
