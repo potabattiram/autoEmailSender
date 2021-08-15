@@ -20,7 +20,7 @@ def Mail_Sender():
         if curr_month in i["b_month"]:
             if curr_date in i["b_date"]-1:
                 subject = 'Birthday Wishes!'
-                body = '\nHello, ' + i["name"]+"!"+ '\nHow are you? ' + 'Its been a long while we have met\nHere I remember you on your special occassion of Birthday\nBirthdays are inevitable, beautiful and very particular moments in our lives! \nMoments that brings precious memories back, celebrates the present times and gives a strong hope for the future.'+ '\n\n'+i["name"].split()[0] +', Wish you a Happy and Prosperous Birthday\nThank You!'
+                body = '\nHello, ' + i["name"]+"!"+ '\nHow are you? ' + 'Its been a long while we have met\nHere I remember you on your special occassion of Birthday\nBirthdays are inevitable, beautiful and very particular moments in our lives! \nMoments that brings precious memories back, celebrates the present times and gives a strong hope for the future.'+ '\n\n'+i["name"].split()[0] +', Wish you a Happy and Prosperous Birthday\n \nRegards\nBalram(Ram) Potabatti'
                 message = f'Subject: {subject}\n\n{body}'
 
                 server.sendmail("potabattiram@gmail.com",i["emailId"],message)
