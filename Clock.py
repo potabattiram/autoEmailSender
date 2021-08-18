@@ -4,7 +4,7 @@ from Functions import Mail_Sender
 import smtplib
 
 server = smtplib.SMTP_SSL("smtp.gmail.com",465)
-server.login("potabattiram@gmail.com","Potabatti9012@")
+server.login("potabattiram@gmail.com","calculasmadeE@sy")
 
 def At_12():
     server.sendmail("potabattiram@gmail.com","potabattiram@gmail.com",'Testing Phase')
