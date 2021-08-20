@@ -13,7 +13,7 @@ curr_Hour = datetime.datetime.now().strftime("%H")
 curr_mint = datetime.datetime.now().strftime("%M")
 
 server = smtplib.SMTP_SSL("smtp.gmail.com",465)
-server.login("potabattiram@gmail.com","calculusmadeE@sy")
+server.login("potabattiram@gmail.com","CalculusmadeE@sy")
 
 def Mail_Sender():
     for i in file:
