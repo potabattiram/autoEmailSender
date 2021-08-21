@@ -15,11 +15,11 @@ def Test():
 
 schedule.every().seconds.do(Test)
 
-schedule.every().day.at("10:56").do(At_12)
-schedule.every().day.at("11:46").do(At_12)
-schedule.every().day.at("12:46").do(At_12)
+schedule.every().day.at("19:56").do(At_12)
+schedule.every().day.at("18:46").do(At_12)
+schedule.every().day.at("17:46").do(At_12)
 
-schedule.every().day.at("18:30").do(Mail_Sender)
+schedule.every().day.at("00:00").do(Mail_Sender)
 
 while True:
     schedule.run_pending()
