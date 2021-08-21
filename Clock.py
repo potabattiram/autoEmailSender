@@ -15,12 +15,12 @@ def Test():
 
 schedule.every().seconds.do(Test)
 
-schedule.every().day.at("12:18").do(At_12)
-schedule.every().day.at("17:00").do(At_12)
-schedule.every().day.at("18:20").do(At_12)
-schedule.every().day.at("18:50").do(At_12)
-schedule.every().day.at("19:00").do(At_12)
-schedule.every().day.at("20:00").do(At_12)
+schedule.every().day.at("04:00").do(At_12)
+schedule.every().day.at("05:00").do(At_12)
+schedule.every().day.at("06:00").do(At_12)
+schedule.every().day.at("07:00").do(At_12)
+schedule.every().day.at("08:00").do(At_12)
+schedule.every().day.at("10:10").do(At_12)
 
 schedule.every().day.at("18:30").do(Mail_Sender)
 
