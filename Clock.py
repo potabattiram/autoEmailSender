@@ -14,11 +14,9 @@ def Test():
      print('Yes Bro, I am Okay & working;)')
 
 schedule.every().seconds.do(Test)
-
-schedule.every().day.at("19:56").do(At_12)
-schedule.every().day.at("18:46").do(At_12)
-schedule.every().day.at("17:46").do(At_12)
-
+schedule.every().day.at("20:00").do(Mail_Sender)
+schedule.every().day.at("21:00").do(Mail_Sender)
+schedule.every().day.at("22:00").do(Mail_Sender)
 schedule.every().day.at("00:00").do(Mail_Sender)
 
 while True:
