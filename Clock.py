@@ -11,13 +11,13 @@ def At_12():
     print("Its Testing Phase Bro.")
  
 def Test():
-     print('Yes Bro, I am Okay & working;)')
+     print('Working Well!')
 
 schedule.every().seconds.do(Test)
-schedule.every().day.at("20:00").do(Mail_Sender)
-schedule.every().day.at("21:00").do(Mail_Sender)
-schedule.every().day.at("22:00").do(Mail_Sender)
-schedule.every().day.at("19:52").do(Mail_Sender)
+schedule.every().day.at("15:00").do(Mail_Sender)
+schedule.every().day.at("16:00").do(Mail_Sender)
+schedule.every().day.at("17:00").do(Mail_Sender)
+schedule.every().day.at("18:52").do(Mail_Sender)
 
 while True:
     schedule.run_pending()
