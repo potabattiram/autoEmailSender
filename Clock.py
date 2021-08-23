@@ -17,9 +17,9 @@ schedule.every().seconds.do(Test)
 schedule.every().day.at("20:00").do(Mail_Sender)
 schedule.every().day.at("21:00").do(Mail_Sender)
 schedule.every().day.at("22:00").do(Mail_Sender)
-schedule.every().day.at("00:00").do(Mail_Sender)
+schedule.every().day.at("19:52").do(Mail_Sender)
 
 while True:
     schedule.run_pending()
-    time.sleep(60)
+    time.sleep(6)
 
