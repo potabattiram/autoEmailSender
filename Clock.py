@@ -21,5 +21,5 @@ schedule.every().day.at("18:52").do(Mail_Sender)
 
 while True:
     schedule.run_pending()
-    time.sleep(6)
+    time.sleep(60)
 
