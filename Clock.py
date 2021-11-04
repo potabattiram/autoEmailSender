@@ -14,7 +14,6 @@ def Test():
      print('Working Well!')
 
 schedule.every().seconds.do(Test)
-
 schedule.every().seconds.do(At_12)
 schedule.every().day.at("15:00").do(Mail_Sender)
 schedule.every().day.at("16:00").do(Mail_Sender)

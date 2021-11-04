@@ -4,6 +4,7 @@ import personsData
 import json
 import smtplib
 
+
 file = json.loads(personsData.Person)
 curr_whole = datetime.datetime.now().strftime("%Y %m %d")
 curr_month = datetime.datetime.now().strftime("%B")
